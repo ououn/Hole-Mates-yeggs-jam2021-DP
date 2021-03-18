@@ -1,0 +1,1 @@
+advancement revoke @a[advancements={tipadv:example/asshole=true}] only tipadv:example/asshole
