@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		{ "required":false, "id":"minecraft:load" },
 		{ "required":false, "id":"uin:load" }
 	]
 }

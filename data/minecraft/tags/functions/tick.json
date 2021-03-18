@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		{ "required":false, "id":"minecraft:tick" },
 		{ "required":false, "id":"uin:tick" }
 	]
 }

@@ -1,0 +1,32 @@
+*单人专注，多人闪开，因此玩家分数记录在虚拟玩家 .player
+
+记分板
+
+const   常量，创建于load，$<数值>，例 .500 .-500，没有就加不难吧
+
+x y z   坐标，取值放大1000倍
+    玩家自动在函数tick开头获取，记录于 .player
+    实体需要自行执行 function uin:data/position/_run_mini
+
+x_pre y_pre z_pre   上一tick坐标，取值放大1000倍
+    玩家自动在函数tick开头获取，记录于 .player
+    实体需要持续执行保证值的准确
+
+x_dlt y_dlt z_dlt   上一tick与当前tick的坐标差
+    玩家自动在函数tick开头获取，记录于 .player
+    实体需要持续执行保证值的准确
+
+r0 r1   旋转角度，取值放大100倍，r0=-18000 ~ 18000，r1=-9000 ~ 9000
+    玩家自动在函数tick开头获取，记录于 .player
+r0_pre r0_dlt r1_pre r1_dlt 同理见上
+    function uin:data/rotation/_run_mini
+
+slot    玩家所选槽位， 0 ~ 8
+slot_dlt    槽位变动，（往左）上滚=1，（往右）下滚=-1，无变动=0
+slot_pre    同
+
+lit lit_y1  玩家所在坐标/所在坐标上方亮度，0 ~ 15
+lit_pre lit_y1_pre  上一tick亮度
+lit_dlt lit_y1_dlt  上一tick与当前tick的亮度差
+    function uin:data/lit_lv/_run_mini
+    function uin:data/lit_lv/_run_y1_mini

@@ -1,0 +1,16 @@
+execute if predicate uin:lit_lv/y1/0 run scoreboard players set @s lit_y1 0
+execute if predicate uin:lit_lv/y1/1 run scoreboard players set @s lit_y1 1
+execute if predicate uin:lit_lv/y1/2 run scoreboard players set @s lit_y1 2
+execute if predicate uin:lit_lv/y1/3 run scoreboard players set @s lit_y1 3
+execute if predicate uin:lit_lv/y1/4 run scoreboard players set @s lit_y1 4
+execute if predicate uin:lit_lv/y1/5 run scoreboard players set @s lit_y1 5
+execute if predicate uin:lit_lv/y1/6 run scoreboard players set @s lit_y1 6
+execute if predicate uin:lit_lv/y1/7 run scoreboard players set @s lit_y1 7
+execute if predicate uin:lit_lv/y1/8 run scoreboard players set @s lit_y1 8
+execute if predicate uin:lit_lv/y1/9 run scoreboard players set @s lit_y1 9
+execute if predicate uin:lit_lv/y1/10 run scoreboard players set @s lit_y1 10
+execute if predicate uin:lit_lv/y1/11 run scoreboard players set @s lit_y1 11
+execute if predicate uin:lit_lv/y1/12 run scoreboard players set @s lit_y1 12
+execute if predicate uin:lit_lv/y1/13 run scoreboard players set @s lit_y1 13
+execute if predicate uin:lit_lv/y1/14 run scoreboard players set @s lit_y1 14
+execute if predicate uin:lit_lv/y1/15 run scoreboard players set @s lit_y1 15
