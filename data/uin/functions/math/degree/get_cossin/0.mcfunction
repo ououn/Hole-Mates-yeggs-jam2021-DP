@@ -1,0 +1,2 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["temp"],Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+execute as @e[type=minecraft:area_effect_cloud,tag=temp,distance=..1] run function uin:math/degree/get_cossin/1

@@ -1,8 +1,8 @@
-scoreboard players operation .player slot_pre = .player slot
-scoreboard players operation .player slot_dlt = .player slot
-execute store result score .player slot run data get entity @s SelectedItemSlot
+scoreboard players operation .me slot_pre = .me slot
+scoreboard players operation .me slot_dlt = .me slot
+execute store result score .me slot run data get entity @s SelectedItemSlot
 
-scoreboard players operation .player slot_dlt -= .player slot
-execute if score .player slot_dlt matches -8 run scoreboard players set .player slot_dlt 1
-execute if score .player slot_dlt matches 8 run scoreboard players set .player slot_dlt -1
-execute unless score .player slot_dlt matches -1..1 run scoreboard players set .player slot_dlt 0
+scoreboard players operation .me slot_dlt -= .me slot
+execute if score .me slot_dlt matches -8 run scoreboard players set .me slot_dlt 1
+execute if score .me slot_dlt matches 8 run scoreboard players set .me slot_dlt -1
+execute unless score .me slot_dlt matches -1..1 run scoreboard players set .me slot_dlt 0

@@ -1,23 +1,26 @@
-*单人专注，多人闪开，因此玩家分数记录在虚拟玩家 .player
+*   单人专注，多人闪开，因此玩家分数记录在虚拟玩家 .me
 
-记分板
+▊▊▊记分板
 
 const   常量，创建于load，$<数值>，例 .500 .-500，没有就加不难吧
 
+temp    用于计算临时变量，可使用虚拟玩家，tick开头reset
+    例 scoreboard players operation .temp1 temp += @s x
+
 x y z   坐标，取值放大1000倍
-    玩家自动在函数tick开头获取，记录于 .player
+    玩家自动在函数tick开头获取，记录于 .me
     实体需要自行执行 function uin:data/position/_run_mini
 
 x_pre y_pre z_pre   上一tick坐标，取值放大1000倍
-    玩家自动在函数tick开头获取，记录于 .player
+    玩家自动在函数tick开头获取，记录于 .me
     实体需要持续执行保证值的准确
 
 x_dlt y_dlt z_dlt   上一tick与当前tick的坐标差
-    玩家自动在函数tick开头获取，记录于 .player
+    玩家自动在函数tick开头获取，记录于 .me
     实体需要持续执行保证值的准确
 
 r0 r1   旋转角度，取值放大100倍，r0=-18000 ~ 18000，r1=-9000 ~ 9000
-    玩家自动在函数tick开头获取，记录于 .player
+    玩家自动在函数tick开头获取，记录于 .me
 r0_pre r0_dlt r1_pre r1_dlt 同理见上
     function uin:data/rotation/_run_mini
 
@@ -30,3 +33,29 @@ lit_pre lit_y1_pre  上一tick亮度
 lit_dlt lit_y1_dlt  上一tick与当前tick的亮度差
     function uin:data/lit_lv/_run_mini
     function uin:data/lit_lv/_run_y1_mini
+
+
+
+▊▊▊函数
+*   _player | 函数开始自动获取并记录到对应记分板下的虚拟玩家 .me
+*   _run    | 获取并记录到执行者对应记分板，可能包含如 _pre前一刻的值、_dlt与前一刻值的差
+*   _run_mini   | 获取并记录到执行者对应记分板
+
+函数    作用    记分板  目标
+uin:data/lit_lv/_run    获取执行者当前坐标亮度。  lit，lit_pre，lit_dlt   @s
+uin:data/lit_lv/_run_mini   同。  lit  @s
+uin:data/lit_lv/_run_y1    获取执行者当前y坐标+1亮度。  lit_y1，lit_y1_pre，lit_y1_dlt   @s
+uin:data/lit_lv/_run_y1_mini    同。  lit_y1   @s
+
+uin:data/position/_run    获取执行者当前坐标。  x，x_pre，x_dlt & (y/z)   @s
+uin:data/position/_run_mini   同。    x,y,z   @s
+
+uin:data/position/_run    获取执行者当前转向。  r0，r0_pre，r0_dlt & (r1)   @s
+uin:data/position/_run_mini   同。    r0,r1   @s
+
+函数    作用    记分板 + 输入     记分板 + 输出
+uin:math/degree/_run_180to360   -180.00~180.00转0.00~360.00。 temp + .in1  temp + .out1
+uin:math/degree/_run_360to180   0.00~360.00转-180.00~180.00。 temp + .in1  temp + .out1
+uin:math/degree/_run_360repetition   减少重复度数，例 361=1。 temp + .in1  temp + .out1
+uin:math/degree/_run_get_radian     角度转弧度。    temp + .in1  temp + .out1, .out2, .out3
+uin:math/degree/_run_get_cossin     角度转cos & sin。    temp + .in1  temp + .out1, .out2

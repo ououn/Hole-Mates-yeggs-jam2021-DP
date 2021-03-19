@@ -31,5 +31,11 @@ scoreboard objectives add lit_y1 dummy
 scoreboard objectives add lit_y1_pre dummy
 scoreboard objectives add lit_y1_dlt dummy
 
+scoreboard objectives add temp dummy
 scoreboard objectives add const dummy
+scoreboard players set .100 const 100
+scoreboard players set .18000 const 18000
 scoreboard players set .36000 const 36000
+scoreboard players set .pi2 const 314
+scoreboard players set .pi4 const 31416
+scoreboard players set .pi6 const 3141593
