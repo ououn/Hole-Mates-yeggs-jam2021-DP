@@ -5,6 +5,4 @@ function uin:data/rotation/_player_rot
 function uin:data/slot
 function uin:data/lit_lv/_player_lit
 function uin:data/lit_lv/_player_lit_y1
-
-#   Todo
-#   wasd press
+function uin:data/wasd/_player_run
