@@ -1,0 +1,1 @@
+{"parent": "minecraft:recipes/root", "rewards": {"recipes": ["minecraft:brown_stained_glass_pane"]}, "criteria": {"impossible": {"trigger": "minecraft:impossible"}}, "requirements": [["impossible"]]}

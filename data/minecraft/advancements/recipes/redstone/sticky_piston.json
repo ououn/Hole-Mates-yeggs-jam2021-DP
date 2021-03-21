@@ -1,0 +1,1 @@
+{"parent": "minecraft:recipes/root", "rewards": {"recipes": ["minecraft:sticky_piston"]}, "criteria": {"impossible": {"trigger": "minecraft:impossible"}}, "requirements": [["impossible"]]}

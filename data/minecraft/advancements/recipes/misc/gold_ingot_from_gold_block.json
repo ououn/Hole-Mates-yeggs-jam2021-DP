@@ -1,0 +1,1 @@
+{"parent": "minecraft:recipes/root", "rewards": {"recipes": ["minecraft:gold_ingot_from_gold_block"]}, "criteria": {"impossible": {"trigger": "minecraft:impossible"}}, "requirements": [["impossible"]]}

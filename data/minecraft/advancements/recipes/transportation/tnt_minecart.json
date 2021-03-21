@@ -1,0 +1,1 @@
+{"parent": "minecraft:recipes/root", "rewards": {"recipes": ["minecraft:tnt_minecart"]}, "criteria": {"impossible": {"trigger": "minecraft:impossible"}}, "requirements": [["impossible"]]}
