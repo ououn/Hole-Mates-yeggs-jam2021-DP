@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "attack": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+            "entity":{
+                "nbt":"{Tags:[\"example\"]}"
+            }
+          }
+        }
+      },
+    "rewards":{
+        "function":"interact:example/adv"
+    }
+}

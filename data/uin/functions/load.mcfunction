@@ -40,3 +40,7 @@ scoreboard players set .36000 const 36000
 scoreboard players set .pi2 const 314
 scoreboard players set .pi4 const 31416
 scoreboard players set .pi6 const 3141593
+
+#晴路卡加的↓
+team add nohb
+team modify nohb collisionRule never

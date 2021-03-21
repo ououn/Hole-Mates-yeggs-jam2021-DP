@@ -1,0 +1,1 @@
+execute if entity @s[tag=attack] run data modify entity @s CustomName set value '{"keybind":"key.attack","font":"keybind:float"}'
