@@ -5,6 +5,12 @@
         "conditions": {
             "entity":{
                 "nbt":"{Tags:[\"example\"]}"
+            },
+            "damage":{
+              "type":{
+                "is_projectile":false,
+                "is_magic":false
+              }
             }
           }
         }

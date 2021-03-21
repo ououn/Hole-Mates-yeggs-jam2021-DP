@@ -1,1 +1,1 @@
-execute as @a at @s run function interact:floatkey/range
+execute as @a at @s anchored eyes run function interact:floatkey/range
