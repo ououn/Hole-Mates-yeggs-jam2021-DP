@@ -1,3 +1,6 @@
+#   记分板判据
+function uin:data/stat/load_stat
+
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
@@ -31,6 +34,7 @@ scoreboard objectives add lit_y1 dummy
 scoreboard objectives add lit_y1_pre dummy
 scoreboard objectives add lit_y1_dlt dummy
 
+#   常量
 scoreboard objectives add temp dummy
 scoreboard objectives add const dummy
 scoreboard players set .-1 const -1

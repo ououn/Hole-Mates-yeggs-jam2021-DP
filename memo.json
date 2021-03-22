@@ -62,5 +62,5 @@ uin:math/degree/_run_get_cossin     (0~360)角度转cos & sin。    temp + .in1 
 uin:math/degree/_run_rotated        输入（逆时针 | 0~360）旋转角度和xz两坐标，输出绕0点旋转后的xz坐标。 temp + .in1, in2, in3   temp + .out1, out2
 
 uin:data/wasd/_run      （基于坐标差对比，所以效果不是很到位）获取执行者移动方向，输入执行者r0角度(0~360)，输出wasd。  temp + .in1  temp + .out2, .out4, .out1, .out3
-    单方向 ~= 200
-    双方向 ~= 150
+    单方向 ~216   run ~ 284
+    双方向 ~157   run ~ 205
