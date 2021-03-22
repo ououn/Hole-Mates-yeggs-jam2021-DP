@@ -26,9 +26,9 @@ scoreboard objectives add click_pot minecraft.custom:minecraft.pot_flower
 scoreboard objectives add click_cauldron dummy
 scoreboard objectives add click_cauldron_1 minecraft.custom:minecraft.use_cauldron
 scoreboard objectives add click_cauldron_2 minecraft.custom:minecraft.fill_cauldron
-scoreboard objectives add click_cauldron_4 minecraft.custom:minecraft.clean_armor
-scoreboard objectives add click_cauldron_5 minecraft.custom:minecraft.clean_banner
-scoreboard objectives add click_cauldron_6 minecraft.custom:minecraft.clean_shulker_box
+scoreboard objectives add click_cauldron_3 minecraft.custom:minecraft.clean_armor
+scoreboard objectives add click_cauldron_4 minecraft.custom:minecraft.clean_banner
+scoreboard objectives add click_cauldron_5 minecraft.custom:minecraft.clean_shulker_box
 #   可互动的非容器
 scoreboard objectives add click_block_2 dummy
 scoreboard objectives add click_anvil minecraft.custom:minecraft.interact_with_anvil
@@ -40,9 +40,9 @@ scoreboard objectives add click_loom minecraft.custom:minecraft.interact_with_lo
 scoreboard objectives add click_smit_table minecraft.custom:minecraft.interact_with_smithing_table
 scoreboard objectives add click_stonecutte minecraft.custom:minecraft.interact_with_stonecutter
 scoreboard objectives add click_cake minecraft.custom:minecraft.eat_cake_slice
-scoreboard objectives add click_noteblock1 minecraft.custom:minecraft.play_noteblock
+scoreboard objectives add click_noteblock1 minecraft.custom:minecraft.tune_noteblock
 #   特例
-scoreboard objectives add click_noteblock2 minecraft.custom:minecraft.tune_noteblock
+scoreboard objectives add click_noteblock2 minecraft.custom:minecraft.play_noteblock
 scoreboard objectives add click_bell minecraft.custom:minecraft.bell_ring
 
 #   移动相关
@@ -79,7 +79,9 @@ scoreboard objectives add dmg_resisted minecraft.custom:minecraft.damage_resiste
 scoreboard objectives add dmg_taken minecraft.custom:minecraft.damage_taken
 
 #   按键相关
-scoreboard objectives add press_shift minecraft.custom:minecraft.sneak_time
+scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time
+scoreboard objectives add sneak_pre dummy
+scoreboard objectives add press_shift dummy
 scoreboard objectives add press_q minecraft.custom:minecraft.drop
 scoreboard objectives add press_space minecraft.custom:minecraft.jump
 

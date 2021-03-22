@@ -1,5 +1,5 @@
 #   记分板判据
-function uin:data/stat/load_stat
+function uin:data/stat/_load_stat
 
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
@@ -45,6 +45,6 @@ scoreboard players set .pi2 const 314
 scoreboard players set .pi4 const 31416
 scoreboard players set .pi6 const 3141593
 
-#晴路卡加的↓
+#   晴路卡加的↓
 team add nohb
 team modify nohb collisionRule never

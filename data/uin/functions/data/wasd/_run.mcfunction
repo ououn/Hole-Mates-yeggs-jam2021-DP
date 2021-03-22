@@ -1,10 +1,13 @@
-#   .in1    r0 (0~360)
+#   .in1    r0 [auto]   (-180.00~180.00)
 #   .out1   s
 #   .out2   w
 #   .out3   d
 #   .out4   a
 
+scoreboard players operation .in1 temp = @s r0
 scoreboard players operation .in1 temp *= .-1 const
+function uin:math/degree/_run_180to360
+scoreboard players operation .in1 temp = .out1 temp
 scoreboard players operation .in2 temp = @s x_dlt
 scoreboard players operation .in3 temp = @s z_dlt
 function uin:math/degree/_run_rotated
@@ -12,8 +15,6 @@ function uin:math/degree/_run_rotated
 #   获取结果
 scoreboard players operation .tmp1 temp = .out1 temp
 scoreboard players operation .tmp2 temp = .out2 temp
-scoreboard players operation .tmp1 temp /= .100 const
-scoreboard players operation .tmp2 temp /= .100 const
 
 #   输出
 scoreboard players set .out1 temp 0
