@@ -25,7 +25,9 @@ execute as @a at @s run function uin:data/_player
 #   按键
 #execute as @a run title @s actionbar ["press_shift = ",{"score":{"name":"@s","objective":"press_shift"}},"  press_q = ",{"score":{"name":"@s","objective":"press_q"}},"  press_space = ",{"score":{"name":"@s","objective":"press_space"}}]
 #   可检测方块右键
-execute as @a run title @s actionbar ["click_block = ",{"score":{"name":"@s","objective":"click_block"}},"  open_container = ",{"score":{"name":"@s","objective":"open_container"}},"  click_block_1 = ",{"score":{"name":"@s","objective":"click_block_1"}},"  click_block_2 = ",{"score":{"name":"@s","objective":"click_block_2"}},"  click_block_item = ",{"score":{"name":"@s","objective":"click_block_item"}}]
+#execute as @a run title @s actionbar ["click_block = ",{"score":{"name":"@s","objective":"click_block"}},"  open_container = ",{"score":{"name":"@s","objective":"open_container"}},"  click_block_1 = ",{"score":{"name":"@s","objective":"click_block_1"}},"  click_block_2 = ",{"score":{"name":"@s","objective":"click_block_2"}},"  click_block_item = ",{"score":{"name":"@s","objective":"click_block_item"}}]
+#   移动
+execute as @a run title @s actionbar ["move_one_cm = ",{"score":{"name":"@s","objective":"move_one_cm"}},"  move_active = ",{"score":{"name":"@s","objective":"move_active"}},"  move_active_moun = ",{"score":{"name":"@s","objective":"move_active_moun"}},"  move_passive = ",{"score":{"name":"@s","objective":"move_passive"}}]
 
 function interact:floatkey/tick
 
@@ -77,10 +79,9 @@ scoreboard players set @a click_stonecutte 0
 scoreboard players set @a click_cake 0
 scoreboard players set @a click_noteblock1 0
 
-
-
 scoreboard players set @a click_noteblock2 0
 scoreboard players set @a click_bell 0
+
 
 scoreboard players set @a press_q 0
 scoreboard players set @a press_space 0

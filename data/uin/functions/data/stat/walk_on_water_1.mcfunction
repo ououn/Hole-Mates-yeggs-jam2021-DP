@@ -1,0 +1,2 @@
+scoreboard players set @s move_walkonWater 0
+execute if score @s walkonWater_pre matches 1..2 run scoreboard players set @s move_walkonWater 3
