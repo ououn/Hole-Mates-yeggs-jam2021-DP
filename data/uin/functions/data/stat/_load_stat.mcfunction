@@ -1,3 +1,76 @@
+#   使用物品
+scoreboard objectives add item_coas minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add item_wfoas minecraft.used:minecraft.warped_fungus_on_a_stick
+#scoreboard objectives add item_knowle_book minecraft.used:minecraft.knowledge_book
+
+#   蛋
+scoreboard objectives add item_egg dummy
+scoreboard objectives add item_egg_bat minecraft.used:minecraft.bat_spawn_egg
+scoreboard objectives add item_egg_bee minecraft.used:minecraft.bee_spawn_egg
+scoreboard objectives add item_egg_blaze minecraft.used:minecraft.blaze_spawn_egg
+scoreboard objectives add item_egg_cat minecraft.used:minecraft.cat_spawn_egg
+scoreboard objectives add item_egg_cav_spi minecraft.used:minecraft.cave_spider_spawn_egg
+scoreboard objectives add item_egg_chicken minecraft.used:minecraft.chicken_spawn_egg
+scoreboard objectives add item_egg_cod minecraft.used:minecraft.cod_spawn_egg
+scoreboard objectives add item_egg_cow minecraft.used:minecraft.cow_spawn_egg
+scoreboard objectives add item_egg_creeper minecraft.used:minecraft.creeper_spawn_egg
+scoreboard objectives add item_egg_dolphin minecraft.used:minecraft.dolphin_spawn_egg
+scoreboard objectives add item_egg_donkey minecraft.used:minecraft.donkey_spawn_egg
+scoreboard objectives add item_egg_drowned minecraft.used:minecraft.drowned_spawn_egg
+scoreboard objectives add item_egg_eld_gua minecraft.used:minecraft.elder_guardian_spawn_egg
+scoreboard objectives add item_egg_enderma minecraft.used:minecraft.enderman_spawn_egg
+scoreboard objectives add item_egg_endermi minecraft.used:minecraft.endermite_spawn_egg
+scoreboard objectives add item_egg_evoker minecraft.used:minecraft.evoker_spawn_egg
+scoreboard objectives add item_egg_fox minecraft.used:minecraft.fox_spawn_egg
+scoreboard objectives add item_egg_ghast minecraft.used:minecraft.ghast_spawn_egg
+scoreboard objectives add item_egg_guardia minecraft.used:minecraft.guardian_spawn_egg
+scoreboard objectives add item_egg_hoglin minecraft.used:minecraft.hoglin_spawn_egg
+scoreboard objectives add item_egg_horse minecraft.used:minecraft.horse_spawn_egg
+scoreboard objectives add item_egg_husk minecraft.used:minecraft.husk_spawn_egg
+scoreboard objectives add item_egg_llama minecraft.used:minecraft.llama_spawn_egg
+scoreboard objectives add item_egg_magma minecraft.used:minecraft.magma_cube_spawn_egg
+scoreboard objectives add item_egg_mooshro minecraft.used:minecraft.mooshroom_spawn_egg
+scoreboard objectives add item_egg_mule minecraft.used:minecraft.mule_spawn_egg
+scoreboard objectives add item_egg_ocelot minecraft.used:minecraft.ocelot_spawn_egg
+scoreboard objectives add item_egg_panda minecraft.used:minecraft.panda_spawn_egg
+scoreboard objectives add item_egg_parrot minecraft.used:minecraft.parrot_spawn_egg
+scoreboard objectives add item_egg_phantom minecraft.used:minecraft.phantom_spawn_egg
+scoreboard objectives add item_egg_pig minecraft.used:minecraft.pig_spawn_egg
+scoreboard objectives add item_egg_pigli_b minecraft.used:minecraft.piglin_brute_spawn_egg
+scoreboard objectives add item_egg_piglin minecraft.used:minecraft.piglin_spawn_egg
+scoreboard objectives add item_egg_pillage minecraft.used:minecraft.pillager_spawn_egg
+scoreboard objectives add item_egg_pol_bea minecraft.used:minecraft.polar_bear_spawn_egg
+scoreboard objectives add item_egg_puffer minecraft.used:minecraft.pufferfish_spawn_egg
+scoreboard objectives add item_egg_rabbit minecraft.used:minecraft.rabbit_spawn_egg
+scoreboard objectives add item_egg_ravager minecraft.used:minecraft.ravager_spawn_egg
+scoreboard objectives add item_egg_salmon minecraft.used:minecraft.salmon_spawn_egg
+scoreboard objectives add item_egg_sheep minecraft.used:minecraft.sheep_spawn_egg
+scoreboard objectives add item_egg_shulker minecraft.used:minecraft.shulker_spawn_egg
+scoreboard objectives add item_egg_sil_fis minecraft.used:minecraft.silverfish_spawn_egg
+scoreboard objectives add item_egg_ske_hor minecraft.used:minecraft.skeleton_horse_spawn_egg
+scoreboard objectives add item_egg_skeleto minecraft.used:minecraft.skeleton_spawn_egg
+scoreboard objectives add item_egg_slime minecraft.used:minecraft.slime_spawn_egg
+scoreboard objectives add item_egg_spider minecraft.used:minecraft.spider_spawn_egg
+scoreboard objectives add item_egg_squid minecraft.used:minecraft.squid_spawn_egg
+scoreboard objectives add item_egg_stray minecraft.used:minecraft.stray_spawn_egg
+scoreboard objectives add item_egg_strider minecraft.used:minecraft.strider_spawn_egg
+scoreboard objectives add item_egg_llama_t minecraft.used:minecraft.trader_llama_spawn_egg
+scoreboard objectives add item_egg_trop_fi minecraft.used:minecraft.tropical_fish_spawn_egg
+scoreboard objectives add item_egg_turtle minecraft.used:minecraft.turtle_spawn_egg
+scoreboard objectives add item_egg_vex minecraft.used:minecraft.vex_spawn_egg
+scoreboard objectives add item_egg_village minecraft.used:minecraft.villager_spawn_egg
+scoreboard objectives add item_egg_vindica minecraft.used:minecraft.vindicator_spawn_egg
+scoreboard objectives add item_egg_wanderi minecraft.used:minecraft.wandering_trader_spawn_egg
+scoreboard objectives add item_egg_witch minecraft.used:minecraft.witch_spawn_egg
+scoreboard objectives add item_egg_ske_wit minecraft.used:minecraft.wither_skeleton_spawn_egg
+scoreboard objectives add item_egg_wolf minecraft.used:minecraft.wolf_spawn_egg
+scoreboard objectives add item_egg_zoglin minecraft.used:minecraft.zoglin_spawn_egg
+scoreboard objectives add item_egg_zom_hor minecraft.used:minecraft.zombie_horse_spawn_egg
+scoreboard objectives add item_egg_zombie minecraft.used:minecraft.zombie_spawn_egg
+scoreboard objectives add item_egg_zom_vil minecraft.used:minecraft.zombie_villager_spawn_egg
+scoreboard objectives add item_egg_zom_pig minecraft.used:minecraft.zombified_piglin_spawn_egg
+
+
 #   右键方块相关
 #   不包含特例
 scoreboard objectives add click_block dummy
@@ -117,7 +190,7 @@ scoreboard objectives add press_space minecraft.custom:minecraft.jump
 
 #   杂项
 scoreboard objectives add misc_leave minecraft.custom:minecraft.leave_game
-scoreboard objectives add misc_join minecraft.custom:minecraft.play_one_minute
+scoreboard objectives add misc_ingame_time minecraft.custom:minecraft.play_one_minute
 scoreboard objectives add misc_death_time minecraft.custom:minecraft.time_since_death
 scoreboard objectives add misc_death_count minecraft.custom:minecraft.deaths
 scoreboard objectives add misc_bed_time minecraft.custom:minecraft.time_since_rest
