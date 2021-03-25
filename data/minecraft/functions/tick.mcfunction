@@ -29,6 +29,19 @@ execute as @a at @s run function uin:data/_player
 #   移动
 execute as @a run title @s actionbar ["move_one_cm = ",{"score":{"name":"@s","objective":"move_one_cm"}},"  move_active = ",{"score":{"name":"@s","objective":"move_active"}},"  move_active_moun = ",{"score":{"name":"@s","objective":"move_active_moun"}},"  move_passive = ",{"score":{"name":"@s","objective":"move_passive"}}]
 
+#   反向例子1   影响光标位置
+#tellraw @s [{"text":"A"},{"translate":"space.-4"},{"text":"B"},"C"]
+#tellraw @s [{"text":"A"},{"translate":"space.-4","font":"space:default"},{"text":"B"},"C"]
+#   反向例子2   不影响光标位置
+#tellraw @s [{"text":"A"},{"translate":"offset.-4","with":[{"text":"B"}]},{"text":"C"}]
+#tellraw @s [{"text":"A"},{"translate":"offset.-4","with":[{"text":"B"}],"font":"space:default"},{"text":"C"}]
+#   反向例子3   基于分数，用得不是很舒服	(板和目标随意，长度基于分数所显示的数字，各分数见末尾 https://github.com/AmberWat/NegativeSpaceFont#readme )
+#	*	例
+#		99分	=	往右2像素		
+#		(-6765+2584+2584+987+377+144+55+21+8+3) -112345678分	=	往左2像素
+#tellraw @s [{"text":"A"},{"score":{"name":"offset","objective":"test"},"font":"space:default"},{"text":"C"}]
+
+
 function interact:floatkey/tick
 
 
