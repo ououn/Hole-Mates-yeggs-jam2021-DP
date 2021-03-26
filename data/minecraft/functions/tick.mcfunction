@@ -31,7 +31,7 @@ execute as @a at @s run function uin:data/_player
 #   可检测方块右键
 #execute as @a run title @s actionbar ["click_block = ",{"score":{"name":"@s","objective":"click_block"}},"  open_container = ",{"score":{"name":"@s","objective":"open_container"}},"  click_block_1 = ",{"score":{"name":"@s","objective":"click_block_1"}},"  click_block_2 = ",{"score":{"name":"@s","objective":"click_block_2"}},"  click_block_item = ",{"score":{"name":"@s","objective":"click_block_item"}}]
 #   移动
-execute as @a run title @s actionbar ["move_one_cm = ",{"score":{"name":"@s","objective":"move_one_cm"}},"  move_active = ",{"score":{"name":"@s","objective":"move_active"}},"  move_active_moun = ",{"score":{"name":"@s","objective":"move_active_moun"}},"  move_passive = ",{"score":{"name":"@s","objective":"move_passive"}}]
+#execute as @a run title @s actionbar ["move_one_cm = ",{"score":{"name":"@s","objective":"move_one_cm"}},"  move_active = ",{"score":{"name":"@s","objective":"move_active"}},"  move_active_moun = ",{"score":{"name":"@s","objective":"move_active_moun"}},"  move_passive = ",{"score":{"name":"@s","objective":"move_passive"}}]
 
 #   反向例子1   影响光标位置
 #tellraw @s [{"text":"A"},{"translate":"space.-4"},{"text":"B"},"C"]
@@ -50,6 +50,9 @@ function interact:floatkey/tick
 
 
 
+
+#   统一显示字体
+execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
 
 
 #   ▊▊▊尾

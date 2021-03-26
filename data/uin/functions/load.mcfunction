@@ -34,6 +34,12 @@ scoreboard objectives add lit_y1 dummy
 scoreboard objectives add lit_y1_pre dummy
 scoreboard objectives add lit_y1_dlt dummy
 
+#   反向两空格 & 显示时间
+scoreboard objectives add negfontL dummy
+scoreboard objectives add negfontR dummy
+scoreboard objectives add displayFont dummy
+scoreboard objectives add displayCount dummy
+
 #   常量
 scoreboard objectives add temp dummy
 scoreboard objectives add const dummy
@@ -49,6 +55,8 @@ scoreboard players set .pi6 const 3141593
 execute in minecraft:overworld run forceload add 0 0 0 0
 execute in minecraft:overworld run setblock 0 0 0 minecraft:bedrock replace
 execute in minecraft:overworld run setblock 0 1 0 minecraft:oak_sign replace
+#   font板凳
+execute unless entity @e[type=minecraft:area_effect_cloud,tag=displayMe] in minecraft:overworld positioned 0 -5.0 0 run summon minecraft:area_effect_cloud ~ -5.0 ~ {Tags:["displayFont","displayMe"],CustomName:'{"text":""}',Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 
 #   晴路卡加的↓
 team add nohb
