@@ -39,6 +39,7 @@ scoreboard objectives add negfontL dummy
 scoreboard objectives add negfontR dummy
 scoreboard objectives add displayFont dummy
 scoreboard objectives add displayCount dummy
+scoreboard objectives add displayFontName dummy
 
 #   常量
 scoreboard objectives add temp dummy
