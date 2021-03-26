@@ -1,5 +1,9 @@
 #   ▊▊▊头
 
+#   牌子
+execute in minecraft:overworld unless block 0 0 0 minecraft:bedrock run setblock 0 0 0 minecraft:bedrock replace
+execute in minecraft:overworld unless block 0 1 0 minecraft:oak_sign run setblock 0 1 0 minecraft:oak_sign replace
+
 #   重置临时分数
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy

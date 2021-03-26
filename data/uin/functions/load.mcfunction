@@ -45,6 +45,11 @@ scoreboard players set .pi2 const 314
 scoreboard players set .pi4 const 31416
 scoreboard players set .pi6 const 3141593
 
+#   牌子 & 常加载
+execute in minecraft:overworld run forceload add 0 0 0 0
+execute in minecraft:overworld run setblock 0 0 0 minecraft:bedrock replace
+execute in minecraft:overworld run setblock 0 1 0 minecraft:oak_sign replace
+
 #   晴路卡加的↓
 team add nohb
 team modify nohb collisionRule never

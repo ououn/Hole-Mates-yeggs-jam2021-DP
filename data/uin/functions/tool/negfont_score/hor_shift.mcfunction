@@ -1,0 +1,1 @@
+function uin:tool/negfont_score/hor_shift/l12/l12_0

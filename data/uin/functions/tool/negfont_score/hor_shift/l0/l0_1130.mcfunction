@@ -1,0 +1,1 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'[{"translate":"space.106"}]',Tags:["font","font_new","temp_font"]}
