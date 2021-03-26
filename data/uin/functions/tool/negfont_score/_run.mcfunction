@@ -6,26 +6,14 @@
 
 tag @s add fontTarget
 
-#execute in minecraft:overworld positioned 0 0 0 run summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'[{"translate":"space.-227"}]',Tags:["temp_font","font","fontL"]}
-#execute in minecraft:overworld positioned 0 0 0 run summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'[{"translate":"space.227"}]',Tags:["temp_font","font","fontR"]}
+#   获取两边空格
+execute in minecraft:overworld positioned 0 0 0 run function uin:tool/negfont_score/0
 
-
-execute in minecraft:overworld positioned 0 0 0 run function uin:tool/negfont_score/hor_shift
-execute in minecraft:overworld positioned 0 0 0 as @e[type=minecraft:area_effect_cloud,tag=font_new,limit=1,distance=..1] run tag @s add fontL
-execute in minecraft:overworld positioned 0 0 0 as @e[type=minecraft:area_effect_cloud,tag=font_new,limit=1,distance=..1] run tag @s remove font_new
-scoreboard players operation .in1 temp = .in2 temp
-execute in minecraft:overworld positioned 0 0 0 run function uin:tool/negfont_score/hor_shift
-execute in minecraft:overworld positioned 0 0 0 as @e[type=minecraft:area_effect_cloud,tag=font_new,limit=1,distance=..1] run tag @s add fontR
-execute in minecraft:overworld positioned 0 0 0 as @e[type=minecraft:area_effect_cloud,tag=font_new,limit=1,distance=..1] run tag @s remove font_new
-
-
-#summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'[{"translate":"space.$score"}]',Tags:["font","font_new","temp_font"]}
-
-
+#   拍名字
 execute in minecraft:overworld run data merge block 0 1 0 {Text1:'[{"selector":"@e[type=minecraft:area_effect_cloud,tag=fontL,limit=1]"},{"selector":"@e[tag=fontTarget,limit=1]"},{"selector":"@e[type=minecraft:area_effect_cloud,tag=fontR,limit=1]"}]'}
-
 
 tag @s remove fontTarget
 execute in minecraft:overworld positioned 0 0 0 run kill @e[type=area_effect_cloud,tag=temp_font,distance=..1]
 
+#   获取名字
 data modify entity @s CustomName set from block 0 1 0 Text1
