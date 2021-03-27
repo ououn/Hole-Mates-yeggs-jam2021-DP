@@ -1,0 +1,1 @@
+function game:level/level_1/inventory/diary
