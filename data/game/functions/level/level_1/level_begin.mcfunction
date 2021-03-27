@@ -1,7 +1,8 @@
 #转场
-title @s clear
-title @s times 0 0 60
-title @s title {"text":"a","font":"game:transition","color":"#000000"}
+title @a subtitle ""
+title @a clear
+title @a times 0 0 60
+title @a title {"text":"a","font":"game:transition","color":"#000000"}
 
 #各种设置
 stopsound @a
@@ -9,9 +10,12 @@ execute as @a run attribute @s generic.attack_speed base set -1
 scoreboard players set #level value 1
 time set 14450
 function game:level/level_1/tag_reset
-function game:level/level_1/inventory_reset
+execute as @a run function game:level/level_1/inventory_reset
 scoreboard players set #illusion_timer value 0
 scoreboard players set #page value 0
+scoreboard players set #steak value 0
+gamemode adventure @a
+kill @e[tag=death_pos]
 
 #场景加载/重置
 forceload add 256 128
