@@ -1,5 +1,5 @@
 title @s clear
-title @s times 0 0 30
+title @s times 0 0 60
 title @s title {"text":"a","font":"game:transition","color":"#FFFFFF"}
 tag @s add illusion
 teleport @s ~ ~ ~-256 ~ ~

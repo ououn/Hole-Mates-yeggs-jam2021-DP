@@ -11,3 +11,6 @@ execute as @a run function game:level/level_1/inventory/tick
 #致幻剂
 execute as @a[scores={item_potion=1..}] run function game:level/level_1/potion
 execute if score #illusion_timer value matches 1.. run function game:level/level_1/illusion_timer
+
+#日记翻页
+execute as @a[scores={item_coas=1..}] run function game:level/level_1/diary_turn_page

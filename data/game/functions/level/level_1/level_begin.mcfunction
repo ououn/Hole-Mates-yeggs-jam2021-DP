@@ -11,6 +11,7 @@ time set 14450
 function game:level/level_1/tag_reset
 function game:level/level_1/inventory_reset
 scoreboard players set #illusion_timer value 0
+scoreboard players set #page value 0
 
 #场景加载/重置
 forceload add 256 128
