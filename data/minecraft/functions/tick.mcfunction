@@ -1,5 +1,8 @@
 #   ▊▊▊头
 
+#   font板凳
+execute as @p unless entity @e[type=minecraft:area_effect_cloud,tag=displayMe] in minecraft:overworld positioned 0 -5.0 0 run summon minecraft:area_effect_cloud ~ -5.0 ~ {Tags:["displayFont","displayMe"],CustomName:'{"text":""}',Age:-2147483648,Duration:-1,WaitTime:-2147483648}
+
 #   牌子
 execute in minecraft:overworld unless block 0 0 0 minecraft:bedrock run setblock 0 0 0 minecraft:bedrock replace
 execute in minecraft:overworld unless block 0 1 0 minecraft:oak_sign run setblock 0 1 0 minecraft:oak_sign replace
@@ -54,6 +57,8 @@ function game:level/tick
 
 #   统一显示字体
 execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
+#   字体三行自动对齐到视线
+execute as @e[type=minecraft:area_effect_cloud,tag=place_hold] run function uin:tool/font_name/3
 
 
 #   ▊▊▊尾
