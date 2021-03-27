@@ -11,7 +11,8 @@ scoreboard objectives add temp dummy
 #   获取玩家数值
 execute as @a at @s run function uin:data/_player
 
-
+#   关卡高频
+function game:level/tick
 
 
 
@@ -46,7 +47,7 @@ execute as @a at @s run function uin:data/_player
 #tellraw @s [{"text":"A"},{"score":{"name":"offset","objective":"test"},"font":"space:default"},{"text":"C"}]
 
 
-function interact:floatkey/tick
+#function interact:floatkey/tick
 
 
 

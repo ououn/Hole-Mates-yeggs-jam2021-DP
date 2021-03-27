@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "attack": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+            "entity":{
+                "nbt":"{Tags:[\"level_1\",\"illusion\",\"1\"]}"
+            },
+            "damage":{
+              "type":{
+                "is_projectile":false,
+                "is_magic":false
+              }
+            }
+          }
+        }
+      },
+    "rewards":{
+        "function":"game:level/level_1/interact/illusion/1/adv"
+    }
+}

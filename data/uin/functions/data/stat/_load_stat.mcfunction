@@ -1,6 +1,7 @@
 #   使用物品
 scoreboard objectives add item_coas minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add item_wfoas minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add item_potion minecraft.used:minecraft.potion
 #scoreboard objectives add item_knowle_book minecraft.used:minecraft.knowledge_book
 
 #   蛋

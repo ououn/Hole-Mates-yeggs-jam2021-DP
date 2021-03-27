@@ -39,6 +39,7 @@ scoreboard objectives remove const
 #   使用物品
 scoreboard objectives remove item_coas
 scoreboard objectives remove item_wfoas
+scoreboard objectives remove item_potion
 #scoreboard objectives remove item_knowle_book
 
 #   蛋

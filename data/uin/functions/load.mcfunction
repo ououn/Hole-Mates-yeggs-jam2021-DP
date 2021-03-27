@@ -59,6 +59,10 @@ execute in minecraft:overworld run setblock 0 1 0 minecraft:oak_sign replace
 #   font板凳
 execute unless entity @e[type=minecraft:area_effect_cloud,tag=displayMe] in minecraft:overworld positioned 0 -5.0 0 run summon minecraft:area_effect_cloud ~ -5.0 ~ {Tags:["displayFont","displayMe"],CustomName:'{"text":""}',Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 
+
+
 #   晴路卡加的↓
 team add nohb
 team modify nohb collisionRule never
+#   任意值
+scoreboard objectives add value dummy
