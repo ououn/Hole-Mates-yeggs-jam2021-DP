@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "attack": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+            "entity":{
+                "nbt":"{Tags:[\"level_1\",\"reality\",\"2\"]}"
+            },
+            "damage":{
+              "type":{
+                "is_projectile":false,
+                "is_magic":false
+              }
+            }
+          }
+        }
+      },
+    "rewards":{
+        "function":"game:level/level_1/interact/reality/2/adv"
+    }
+}

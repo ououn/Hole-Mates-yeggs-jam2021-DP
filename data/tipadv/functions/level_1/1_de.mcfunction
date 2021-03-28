@@ -1,0 +1,1 @@
+advancement revoke @a[advancements={game:level_1/tips/1=true}] only game:level_1/tips/1

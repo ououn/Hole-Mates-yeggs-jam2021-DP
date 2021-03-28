@@ -18,3 +18,13 @@ execute as @a[scores={item_coas=1..}] run function game:level/level_1/diary_turn
 #死亡
 execute if score #death value matches 1.. run function game:level/level_1/death/countdown
 execute as @a[tag=dead] run function game:level/level_1/death/tick
+
+#提示
+execute as @a if data entity @s {SelectedItemSlot:4} unless entity @s[tag=level_1_tip_0] run function game:level/level_1/tips/0
+execute as @a if data entity @s {SelectedItem:{id:"minecraft:potion"}} unless entity @s[tag=level_1_tip_1] run function game:level/level_1/tips/1
+execute as @a at @s if entity @e[tag=interact,distance=..3.4] unless entity @s[tag=level_1_tip_2] run function game:level/level_1/tips/2
+
+#通关
+execute positioned 259.0 66.0 138.0 if entity @a[tag=level_1_task_1,dx=2,dy=2,dz=0] unless score #transition value matches 1.. run function game:level/level_1/level_end
+execute positioned 259.0 66.0 -118.0 if entity @a[tag=level_1_task_1,dx=2,dy=2,dz=0] unless score #transition value matches 1.. run function game:level/level_1/level_end
+execute if score #transition value matches 1.. run function game:level/level_1/transition

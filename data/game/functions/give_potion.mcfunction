@@ -1,0 +1,1 @@
+give @s potion{CustomModelData:10000,display:{Name:'{"text":"Potion of Happiness"}',Lore:['{"text":"H.M™","italic": false,"color":"red"}','{"text":"Make all your dreams come true!","italic": false,"color":"white"}']},HideFlags:63}

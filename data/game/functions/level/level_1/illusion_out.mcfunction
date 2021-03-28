@@ -6,4 +6,4 @@ clear @s minecraft:carved_pumpkin
 stopsound @s * minecraft:illusion_theme
 teleport @s ~ ~ ~256 ~ ~
 time set 14450
-execute positioned 256 64 128 if score #steak value matches ..1 run function game:level/level_1/interact/reality/summon
+execute positioned 256 64 128 run function game:level/level_1/interact/reality/summon
