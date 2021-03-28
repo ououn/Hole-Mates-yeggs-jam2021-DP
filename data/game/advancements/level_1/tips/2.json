@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:10003}"
+    },
+    "title": [
+    {
+      "keybind": "key.attack","font":"keybind:frame"
+    },
+    {
+      "text": " to interact.","font":"minecraft:default"
+    }],
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+    "criteria": {
+      "asshole": {
+        "trigger": "minecraft:impossible"
+    }
+  }
+}

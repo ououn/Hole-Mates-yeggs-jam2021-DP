@@ -2,7 +2,7 @@
 execute as @e[type=minecraft:area_effect_cloud,tag=place_hold,tag=text_lv1_02a] run function uin:tool/font_name/0
 
 #   每个显示出现时的音效
-execute as @e[type=minecraft:area_effect_cloud,tag=line,scores={displayCount=-1}] if score @s displayID = .tmp1 temp at @s run playsound minecraft:block.note_block.basedrum master @a ~ ~ ~ 1 2.0 0
+execute as @e[type=minecraft:area_effect_cloud,tag=line,scores={displayCount=-1}] if score @s displayID = .tmp1 temp at @a run playsound minecraft:block.note_block.basedrum master @a ~ ~ ~ 1 2.0 0
 
 #   物理清除
 #   execute as @e[type=minecraft:area_effect_cloud,tag=text_lv1_02a] run function uin:tool/kill_same_displayid

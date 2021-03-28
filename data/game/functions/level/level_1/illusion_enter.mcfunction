@@ -6,4 +6,4 @@ teleport @s ~ ~ ~-256 ~ ~
 execute at @s run playsound minecraft:entity.generic.drink player @s ~ ~ ~ 0.6 0.9 0
 execute at @s run playsound minecraft:illusion_theme record @s ~ ~ ~ 1 1 1
 time set day
-execute positioned 256 64 -128 if score #steak value matches ..1 run function game:level/level_1/interact/illusion/summon
+execute positioned 256 64 -128 run function game:level/level_1/interact/illusion/summon

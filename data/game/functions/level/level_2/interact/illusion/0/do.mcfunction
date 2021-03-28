@@ -1,0 +1,1 @@
+particle minecraft:item minecraft:red_dye{CustomModelData:10100} ~ ~0.5 ~ 0.05 0.05 0.05 0.1 5 force
