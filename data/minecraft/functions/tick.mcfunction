@@ -61,6 +61,13 @@ execute if entity @a[scores={misc_leave=1..}] run function game:level/reset
 execute as @e[type=minecraft:area_effect_cloud,tag=place_hold] run function uin:tool/font_name/3
 
 
+# actionbar count
+scoreboard players remove @e[type=area_effect_cloud,tag=aec_count,scores={aec_count=0..}] aec_count 1
+#
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv1_05,scores={aec_count=0..}] run function game:text/lv1_05
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv1_06,scores={aec_count=0..}] run function game:text/lv1_06
+
+
 #   ▊▊▊尾
 
 #   判据重置

@@ -59,6 +59,9 @@ execute in minecraft:overworld run setblock 0 0 0 minecraft:bedrock replace
 execute in minecraft:overworld run setblock 0 1 0 minecraft:oak_sign replace
 execute in minecraft:overworld run setblock 0 2 0 minecraft:chest replace
 
+#   actionbar count
+scoreboard objectives add aec_count dummy
+
 #   晴路卡加的↓
 team add nohb
 team modify nohb collisionRule never
