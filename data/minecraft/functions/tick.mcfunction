@@ -56,9 +56,18 @@ function game:level/tick
 
 
 #   统一显示字体
-execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
+#   execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
 #   字体三行自动对齐到视线
 execute as @e[type=minecraft:area_effect_cloud,tag=place_hold] run function uin:tool/font_name/3
+
+
+# actionbar count
+scoreboard players remove @e[type=area_effect_cloud,tag=aec_count,scores={aec_count=0..}] aec_count 1
+#
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv1_05,scores={aec_count=0..}] run function game:text/lv1_05
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv1_06,scores={aec_count=0..}] run function game:text/lv1_06
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv2_04,scores={aec_count=0..}] run function game:text/lv2_04
+execute as @e[type=area_effect_cloud,tag=aec_count,tag=lv2_05,scores={aec_count=0..}] run function game:text/lv2_05
 
 
 #   ▊▊▊尾
