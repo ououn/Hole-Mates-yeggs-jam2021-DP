@@ -56,7 +56,7 @@ execute if entity @a[scores={misc_leave=1..}] run function game:level/reset
 
 
 #   统一显示字体
-execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
+#   execute as @a in minecraft:overworld positioned 0.0 -5.0 0.0 run title @s actionbar [{"translate":"space.-512"},{"selector":"@e[tag=displayFont,sort=nearest]"},{"translate":"space.0"}]
 #   字体三行自动对齐到视线
 execute as @e[type=minecraft:area_effect_cloud,tag=place_hold] run function uin:tool/font_name/3
 
