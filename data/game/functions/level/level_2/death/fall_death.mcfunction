@@ -1,0 +1,1 @@
+execute at @s run function game:level/level_2/death/all

@@ -24,7 +24,14 @@ execute as @a if data entity @s {SelectedItemSlot:4} unless entity @s[tag=level_
 execute as @a if data entity @s {SelectedItem:{id:"minecraft:potion"}} unless entity @s[tag=level_1_tip_1] run function game:level/level_1/tips/1
 execute as @a at @s if entity @e[tag=interact,distance=..3.4] unless entity @s[tag=level_1_tip_2] run function game:level/level_1/tips/2
 
+#海报
+execute if entity @a[tag=!illusion] run function game:text/lv1_02a_run
+execute if entity @e[tag=text_lv1_02a] positioned 256 64 128 positioned ~6 ~3.5 ~7.25 if entity @a[distance=5..] run execute as @e[tag=text_lv1_02a] run function uin:tool/kill_same_displayid
+execute if entity @a[tag=illusion] run function game:text/lv1_02b_run
+execute if entity @e[tag=text_lv1_02b] positioned 256 64 -128 positioned ~6 ~3 ~7.25 if entity @a[distance=5..] run execute as @e[tag=text_lv1_02b] run function uin:tool/kill_same_displayid
+
 #通关
+execute positioned 259.0 66.0 138.0 if entity @a[tag=!level_1_task_1,dx=2,dy=2,dz=0] run function game:text/lv1_03
 execute positioned 259.0 66.0 138.0 if entity @a[tag=level_1_task_1,dx=2,dy=2,dz=0] unless score #transition value matches 1.. run function game:level/level_1/level_end
 execute positioned 259.0 66.0 -118.0 if entity @a[tag=level_1_task_1,dx=2,dy=2,dz=0] unless score #transition value matches 1.. run function game:level/level_1/level_end
 execute if score #transition value matches 1.. run function game:level/level_1/transition

@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:area_effect_cloud,tag=text_lv1_02a] run function uin:tool/kill_same_displayid

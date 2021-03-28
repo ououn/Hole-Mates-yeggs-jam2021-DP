@@ -1,0 +1,2 @@
+execute as @a if score #fall value matches 800.. if data entity @s {OnGround:1b} run function game:level/level_2/death/fall_death
+execute as @a store result score #fall value run data get entity @s FallDistance 100
