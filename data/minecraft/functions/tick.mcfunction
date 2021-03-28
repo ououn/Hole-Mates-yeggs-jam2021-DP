@@ -16,8 +16,8 @@ execute as @a at @s run function uin:data/_player
 
 #   关卡高频
 function game:level/tick
-
-
+#   关卡重置
+execute if entity @a[scores={misc_leave=1..}] run function game:level/reset
 
 #   ▊▊▊心
 

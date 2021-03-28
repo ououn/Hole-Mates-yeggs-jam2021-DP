@@ -68,6 +68,7 @@ scoreboard players set @s press_space 0
 #   使用物品
 scoreboard players set @s item_coas 0
 scoreboard players set @s item_wfoas 0
+scoreboard players set @s item_potion 0
 #scoreboard players set @s item_knowle_book 0
 
 #   蛋

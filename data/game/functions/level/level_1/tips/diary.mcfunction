@@ -1,0 +1,1 @@
+execute as @a run function tipadv:level_1/diary
