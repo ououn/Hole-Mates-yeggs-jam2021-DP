@@ -16,6 +16,7 @@ scoreboard players set #transition value 0
 scoreboard players set #page value 0
 scoreboard players set #fall value 0
 scoreboard players set #death value 0
+scoreboard players set #paper value 0
 gamemode adventure @a
 kill @e[tag=death_pos]
 
